@@ -7,31 +7,47 @@ let step3 = document.getElementById("step3");
 let step4 = document.getElementById("step4");
 let step5 = document.getElementById("step5");
 let projectsMain = document.getElementById("Projects");
+let projectBox = document.querySelector("#projectBox")
 
 projectsMain.style.backgroundImage = "url(ePortfolioImages/godaiproj.png)";
 
-step1.addEventListener('click', () => {
+step1.addEventListener('click', (e) => {
     svgCircle.style.strokeDashoffset = "1004";
     projectsMain.style.backgroundImage = "url(ePortfolioImages/godaiproj.png)";
+    projectBox.style.top = "150px";
+
+    e.preventDefault();
 });
 
 step2.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "753";
     projectsMain.style.backgroundImage = "url(ePortfolioImages/eCalculatorproj.png)";
+    projectBox.style.top = "-220px";
+
+    e.preventDefault();
 });
 
 step3.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "502";
     projectsMain.style.backgroundImage = "url(ePortfolioImages/responsiveLayout.png)";
+    projectBox.style.top = "-610px";
+
+    e.preventDefault();
 });
 
 step4.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "251";
     projectsMain.style.backgroundImage = "url(ePortfolioImages/medicalRegFormProj.png)";
+    projectBox.style.top = "-980px";
+
+    e.preventDefault();
 });
 
 step5.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "0";
+    projectBox.style.top = "-1350px";
+
+    e.preventDefault();
 });
 
 //Hamburger Menu

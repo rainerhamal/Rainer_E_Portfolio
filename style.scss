@@ -582,6 +582,56 @@ a {
     }
 }
 
+/*Skills Section*/
+.skillsContain {
+    position: relative;
+    height: 80vh;
+}
+.skillsImg {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &:nth-child(1) {
+        transform: translate(-290%, 240%);
+    }
+    &:nth-child(2) {
+        transform: translate(-290%, -260%);
+    }
+    &:nth-child(3) {
+        transform: translate(-50%, -320%);
+    }
+    &:nth-child(4) {
+        transform: translate(190%, -260%);
+    }
+    &:nth-child(5) {
+        transform: translate(60%, -150%)
+    }
+    &:nth-child(6) {
+        transform: translate(-150%, -150%);
+    }
+    &:nth-child(7) {
+        transform: translate(-290%, 0%);
+    }
+    &:nth-child(8) {
+        transform: translate(-50%, 0%);
+    }
+    &:nth-child(9) {
+        transform: translate(-150%, 140%);
+    }
+    &:nth-child(10) {
+        transform: translate(190%, 0%);
+    }
+    &:nth-child(11) {
+        transform: translate(60%, 140%);
+    }
+    &:nth-child(12) {
+        transform: translate(190%, 240%);
+    }
+}
+
 /*Projects Section */
 .projects-main {
     width: 100%;
@@ -604,6 +654,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
 }
 
 svg {
@@ -627,6 +678,7 @@ svg {
     border-radius: 50%;
     display: block;
     cursor: pointer;
+    z-index: 10;
 }
 #step1 {
     right: 158px;
@@ -648,6 +700,30 @@ svg {
     right: 20px;
     top: 216px;
 }
+
+.projectBox {
+    width: 350px;
+    position: absolute;
+    top: 150px;
+    left: 225px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #faf7f7;
+    transition: 1s;
+}
+
+.projectItem {
+    height: 350px;
+    h1, p {
+        color:#ff3c68;
+    }
+}
+
+.social-links a i {
+    color:#ff3c68;
+    font-size: 30px;
+}
+
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
