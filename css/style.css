@@ -894,7 +894,7 @@ form .button input:hover {
   position: static;
   margin-right: auto;
   margin-left: auto;
-  min-height: 30vh;
+  min-height: 40vh;
   border-top: 2px solid #ff1700;
 }
 .footer h3 {
