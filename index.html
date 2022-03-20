@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
     <!--Icons-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
@@ -46,7 +47,7 @@
     <div class="section hero-section" id ="Home">
         <div class="mycontain centerHero">
 
-            <div class="herotag-1 herotag">
+            <div class="herotag-1 herotag" data-aos="fade-right">
                 <img  class="Image2" src="ePortfolioImages/ProfilePhoto2.2.png" alt="">
             </div>
 
@@ -86,7 +87,7 @@
             <h1 class="heading-2">/ About Me</h1>
         </div>
         <div class="mycontain aboutUsContain">
-            <div class="servicesSect">
+            <div class="servicesSect" data-aos="fade-right">
                 <div class="servicesItem">
                     <h1 class="servicesHeading">Certificates</h1>
 
@@ -132,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="description">
+            <div class="description" data-aos="fade-left">
                 <p class="paragraph-2">
                     A <b>Civil Engineer</b> turned into a <b>Web Developer</b>. I have always been interested with technologies and design ever since when I was little. It is to no surprise that I graduated from technical and engineering schools. At the height of the pandemic I have discovered the profession I truly wanted to pursue. I went all-in in developing and building my skills. These are the skills that would help me bring out better experience and design.
                 </p>
@@ -147,7 +148,7 @@
             <h1 class="heading-2">/ Skills</h1>
         </div>
 
-        <div class="mycontain skillsContain">
+        <div class="mycontain skillsContain" data-aos="fade-in">
             <img src="/ePortfolioImages/AutoCADLogo.png" alt="" class="skillsImg">
             <img src="/ePortfolioImages/htmlLogo.png" alt="" class="skillsImg">
             <img src="/ePortfolioImages/cssLogo.png" alt="" class="skillsImg">
@@ -164,7 +165,7 @@
     </div>
 
     <!--Projects Section-->
-    <div class="section projects-main" id="Projects">
+    <div class="section projects-main" id="Projects" data-aos="fade-in">
         <div class="SectionHeader">
             <h1 class="heading-2">/ Projects</h1>
         </div>
@@ -239,7 +240,73 @@
         </div>
 
         <div class="mycontain">
-            
+            <form action="#" id="contactForm">
+                <div class="visitor_details">
+                    <div class="input_box" data-aos="fade-right">
+                        <span class="details">First Name</span>
+                        <input type="text" placeholder="Enter your First Name" required id="fName"> 
+                        <br>
+                        <small id="error1" style="color: #005e9d;"></small>
+                        <br><br>
+                    </div>
+                    <div class="input_box" data-aos="fade-left">
+                        <span class="details">Last Name</span>
+                        <input type="text" placeholder="Enter your Last Name" required id="LName">
+                        <br>
+                        <small id="error2" style="color: #005e9d;"></small>
+                        <br><br>
+                    </div>
+                    <div class="input_box" data-aos="fade-right">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" required id="email">
+                        <br>
+                        <small id="error3" style="color: #005e9d;"></small>
+                        <br><br>
+                    </div>
+                    <div class="input_box" data-aos="fade-left">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" required id="contactNumber">
+                        <br>
+                        <small id="error4" style="color: #005e9d;"></small>
+                        <br><br>
+                    </div>
+                    <div class="input_box input_box2" data-aos="fade-down">
+                        <span class="details">Message</span>
+                        <textarea name="message" id="message" cols="30" rows="30" required></textarea>
+                        <br>
+                        <small id="error5" style="color: #005e9d;"></small>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="button" data-aos="fade-up">
+                    <input type="submit" value="Send" id="submit">
+                </div>
+            </form>
+        </div>
+        <div class="footer" >
+            <div class="footer1" data-aos="fade-right">
+                <h3>
+                    Connect with me:
+                </h3>
+                <ul>
+                    <li>
+                        <i class='bx bxs-envelope' ></i>
+                        <a href="">rainerneno@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class='bx bxl-skype'></i>
+                        <a href="">live:.cid.8992f637bf8637f</a>
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="socialMedia" data-aos="fade-left">
+                <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/"><i class='bx bxl-github' ></i></a>
+                <a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></a>
+    
+            </div>
         </div>
     </div>
 
@@ -253,5 +320,12 @@
 
 
     <script type="text/javascript" src="/EPortfolioWRainerFlores.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1000
+    });
+  </script>
 </body>
 </html>

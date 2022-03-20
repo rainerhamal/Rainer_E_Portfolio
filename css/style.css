@@ -36,6 +36,15 @@ a {
   margin-left: auto;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 /*Navigation Bar Section*/
 .navbar {
   --text: #005e9d;
@@ -393,7 +402,6 @@ a {
   position: relative;
   font-size: 18px;
   font-weight: bolder;
-  background-color: #ff3c68;
   color: #faf7f7;
   height: 50px;
   text-align: center;
@@ -406,8 +414,13 @@ a {
   transform: translateY(-20px);
   opacity: 0;
 }
+.herotag-2 .div-block-3 button:nth-child(1) {
+  margin-left: 50px;
+  background-color: #005e9d;
+}
 .herotag-2 .div-block-3 button:nth-child(2) {
   margin-left: 50px;
+  background-color: #ff3c68;
 }
 .herotag-2 .div-block-3 button:hover {
   transform: scale(1.1);
@@ -656,6 +669,10 @@ a {
 }
 
 /*Skills Section*/
+.skillsContain .from-top::before {
+  transform: translateY(100%);
+}
+
 .skillsContain {
   position: relative;
   height: 80vh;
@@ -802,6 +819,108 @@ svg {
   font-size: 30px;
 }
 
+.mycontain form .visitor_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .visitor_details .input_box {
+  width: calc(50% - 20px);
+  margin-bottom: 15px;
+  /* border: solid; */
+}
+
+form .visitor_details .input_box2 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+form .visitor_details .input_box2 textarea {
+  height: 100px;
+}
+
+.visitor_details .input_box .details {
+  display: block;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.visitor_details .input_box input, textarea {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.visitor_details .input_box input:focus,
+.visitor_details .input_box input:valid,
+.visitor_details .input_box textarea:focus {
+  border-color: #ff3c68;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+  /* border: solid; */
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(135deg, #71b7e6, #ff3c68);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #ff3c68);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  position: static;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 20vh;
+  border-top: 2px solid #ff1700;
+}
+.footer h3 {
+  color: #ff3c68;
+  font-weight: bolder;
+}
+.footer ul li {
+  list-style: none;
+}
+.footer ul li i {
+  color: #ff3c68;
+}
+.footer ul li a {
+  font-size: 18px;
+}
+
+.footer .socialMedia a i {
+  font-size: 38px;
+  padding-right: 20px;
+}
+.footer .socialMedia a i:hover {
+  transform: scale(1.3);
+  color: #ff3c68;
+  transition: 0.5s;
+}
+
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -928,5 +1047,17 @@ svg {
 
   .servicesSect {
     margin-right: 0;
+  }
+
+  form .visitor_details .input_box {
+    margin-bottom: 15px;
+    width: 100%;
+    /* border: solid; */
+  }
+
+  .mycontain form .visitor_details {
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: 0;
   }
 }
