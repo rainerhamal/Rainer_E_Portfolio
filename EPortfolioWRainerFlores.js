@@ -9,7 +9,7 @@ let step5 = document.getElementById("step5");
 let projectsMain = document.getElementById("Projects");
 let projectBox = document.querySelector("#projectBox")
 
-projectsMain.style.backgroundImage = "url(Rainer_E_Portfolio/ePortfolioImages/godaiProj.png)";
+projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages/godaiProj.png)";
 
 step1.addEventListener('click', (e) => {
     svgCircle.style.strokeDashoffset = "1004";
