@@ -45,6 +45,7 @@ step4.addEventListener('click', () => {
 
 step5.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "0";
+    projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages/godaiProj.png)";
     projectBox.style.top = "-1350px";
 
     e.preventDefault();
