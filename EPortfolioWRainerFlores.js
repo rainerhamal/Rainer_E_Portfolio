@@ -13,7 +13,7 @@ projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages
 
 step1.addEventListener('click', (e) => {
     svgCircle.style.strokeDashoffset = "1004";
-    projectsMain.style.backgroundImage = "url(Rainer_E_Portfolio/ePortfolioImages/godaiProj.png)";
+    projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages/godaiProj.png)";
     projectBox.style.top = "150px";
 
     e.preventDefault();
@@ -21,7 +21,7 @@ step1.addEventListener('click', (e) => {
 
 step2.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "753";
-    projectsMain.style.backgroundImage = "url(Rainer_E_Portfolio/ePortfolioImages/eCalculatorproj.png)";
+    projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages/eCalculatorproj.png)";
     projectBox.style.top = "-220px";
 
     e.preventDefault();
@@ -29,7 +29,7 @@ step2.addEventListener('click', () => {
 
 step3.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "502";
-    projectsMain.style.backgroundImage = "url(Rainer_E_Portfolio/ePortfolioImages/responsiveLayout.png)";
+    projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages/responsiveLayout.png)";
     projectBox.style.top = "-610px";
 
     e.preventDefault();
@@ -37,7 +37,7 @@ step3.addEventListener('click', () => {
 
 step4.addEventListener('click', () => {
     svgCircle.style.strokeDashoffset = "251";
-    projectsMain.style.backgroundImage = "url(Rainer_E_Portfolio/ePortfolioImages/medicalRegFormProj.png)";
+    projectsMain.style.backgroundImage = "url(../Rainer_E_Portfolio/ePortfolioImages/medicalRegFormProj.png)";
     projectBox.style.top = "-980px";
 
     e.preventDefault();
